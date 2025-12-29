@@ -1,2 +1,31 @@
-# gestao-alunos
-Sistema de gerenciamento acadêmico desenvolvido em C# com Windows Forms e SQL Server, focado em operações CRUD de alunos.
+# Projeto Acadêmico - Gestão de Alunos
+Este é um projeto de aplicação Desktop desenvolvido em **C# (.NET Framework)** utilizando **Windows Forms**. O objetivo principal do sistema é realizar o controle e gerenciamento de alunos (CRUD - Criar, Ler, Atualizar e Deletar) em um ambiente acadêmico.
+
+## 📋 Funcionalidades
+O sistema é composto pelas seguintes funcionalidades principais:
+
+* **Controle de Alunos (`frmControleAluno`):** Interface principal para listagem e visualização dos alunos cadastrados.
+* **Cadastro de Alunos (`frmCadastroAluno`):** Formulário para inserir novos alunos e editar informações de alunos existentes.
+* **Persistência de Dados:** Integração com banco de dados para salvar as informações de forma permanente.
+
+## 🚀 Tecnologias Utilizadas
+* **Linguagem:** C#
+* **Framework:** .NET Framework (v4.7.2)
+* **Interface Gráfica:** Windows Forms (WinForms)
+* **Banco de Dados:** SQL Server
+* **IDE Recomendada:** Visual Studio 2019 ou superior
+
+## 📂 Estrutura do Projeto
+A estrutura de pastas do projeto está organizada da seguinte forma:
+
+```text
+projeto-academico/
+├── banco/
+│   └── dbAcademico.sql       # Script para criação do Banco de Dados e Tabelas
+├── prjAcademico/
+│   ├── Aluno.cs              # Classe de Modelo (Entidade Aluno)
+│   ├── frmCadastroAluno.cs   # Lógica do formulário de cadastro
+│   ├── frmControleAluno.cs   # Lógica do formulário de controle/listagem
+│   ├── Program.cs            # Ponto de entrada da aplicação
+│   ├── App.config            # Configurações (incluindo String de Conexão)
+│   └── ...                   # Outros arquivos do projeto
